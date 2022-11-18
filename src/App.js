@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import ParticlesBg from 'particles-bg';
+import NavBar from './components/nav-bar/nav-bar.component';
+import FormField from './components/form-field/form-field.component';
+import LogoImage from './components/logo/logo.component';
+import Ranking from './components/ranking/ranking.component';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ParticlesBg type="cobweb" num={200} color='#0E1294' bg={true} />
+      <NavBar/>
+      <LogoImage/>
+      <Ranking/>
+      <FormField/>
     </div>
   );
 }

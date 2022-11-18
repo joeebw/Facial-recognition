@@ -1,0 +1,15 @@
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    .logo-card {
+        padding: 30px;
+        background: rgb(4,0,71);
+        box-shadow: 5px 7px 9px #888888;
+        background: linear-gradient(90deg, rgb(10, 7, 74) 0%, rgb(108, 125, 141) 50%, rgb(218, 232, 230) 100%);
+        
+        img {
+            width: 70px;
+        }
+       
+    }
+}

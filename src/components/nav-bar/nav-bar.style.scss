@@ -1,0 +1,18 @@
+.container-nav { 
+    display: flex;
+    font-weight: bold;
+    justify-content: flex-end;
+    margin: 15px;
+
+    p {
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+
+    p:hover {
+        color: navy;
+        
+    }
+
+
+}
