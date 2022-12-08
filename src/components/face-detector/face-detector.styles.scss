@@ -1,0 +1,26 @@
+.container-faceDetector {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    .faceDetector-row {
+        position: relative;
+        
+        img {
+            width: 710px;
+            height: auto;
+        }
+    
+        .box-boundaring {
+            position: absolute;
+            box-shadow: 0 0 0 3px rgb(72, 198, 230) inset;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            cursor: pointer;
+    
+        }
+    }
+
+    
+}

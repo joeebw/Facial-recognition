@@ -1,11 +1,18 @@
 import './nav-bar.style.scss';
 
 
-const NavBar = () => {
+const NavBar = ({changeRoute,thereIsUser,signOutReset }) => {
     return(
+        thereIsUser === true ? (
         <nav className='container-nav'>
-            <p>Sign-Out</p>
+            <p onClick={() => {
+                changeRoute('signin')
+                signOutReset();            
+            } }>Sign-Out</p>
         </nav>
+        )
+        :
+        null
     )
 };
 

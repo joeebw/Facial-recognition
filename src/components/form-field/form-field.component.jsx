@@ -1,13 +1,13 @@
 import './form-field.style.scss';
 
-const FormField = () => {
+const FormField = ({onInputChange, onButtonSubmit}) => {
     return(
     <div className='container-form'>
         <h3>I can detect faces in your picture. Click and try. </h3>
-        <form className='input-row'>
-            <input type='text' placeholder='Put the url'/>
-            <button>Detect</button>
-        </form>
+        <div className='input-row'>
+            <input type='text' placeholder='Put the url' onChange={onInputChange} onKeyPress={(e) => e.key == 'Enter' && onButtonSubmit()}/>
+            <button onClick={onButtonSubmit} >Detect</button>
+        </div>
     </div>
     )
 };
